@@ -1,9 +1,17 @@
+[tool.uv]
+required-environments = [
+    "sys_platform == 'darwin' and platform_machine == 'x86_64'"
+]
+constraint-dependencies = [
+    "numba==0.63.1",
+]
+
 [project]
 name = "deploying-ai-env"
 version = "0.1.0"
 description = "Package dependencies for the course Deploying AI taught at the Data Sciences Institute of the University of Toronto."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = "==3.11.17"
 dependencies = [
     "agentops>=0.4.21",
     "autogen>=0.9.9",
